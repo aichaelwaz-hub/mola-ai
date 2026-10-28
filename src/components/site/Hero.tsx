@@ -15,7 +15,7 @@ export function Hero() {
   return (
     <section id="top" onMouseMove={onMove} className="relative isolate overflow-hidden pt-[72px]">
       <div className="pointer-events-none absolute inset-0 -z-10 grid-lines opacity-40" aria-hidden />
-      <div className="container-lc grid min-h-[calc(100svh-72px)] grid-cols-1 items-center gap-10 py-14 lg:grid-cols-12 lg:gap-6 lg:py-20">
+      <div className="container-lc grid grid-cols-1 lg:min-h-[min(calc(100svh-72px),900px)] items-center gap-10 py-14 lg:grid-cols-12 lg:gap-6 lg:py-20">
         <div className="lg:col-span-6 lg:pr-6">
           <div className="inline-flex items-center gap-2 rounded-sm border border-border bg-surface-green px-2.5 py-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-signal" aria-hidden />
@@ -43,8 +43,8 @@ export function Hero() {
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/30" aria-hidden />
             <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-5 font-mono text-[10.5px] uppercase tracking-[0.14em] text-muted-foreground">
-              <span>Clarifier · Prioriser · Transformer</span>
-              <span aria-hidden>LC—01</span>
+              <span className="hidden sm:inline">Clarifier · Prioriser · Transformer</span>
+              <span aria-hidden className="ml-auto">LC—01</span>
             </div>
           </div>
         </div>
