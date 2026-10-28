@@ -8,3 +8,7 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Landing page sections live in `src/components/site/`; all copy is in `content.ts` so text can be revised without touching layout.
+- Colors are semantic tokens in `src/styles.css` (`signal`, `frame`, `surface-green`, …); never hardcode colors in components.
